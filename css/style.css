@@ -52,11 +52,12 @@ main{
     margin-top: 1px;
     border-radius: 0 0 4px 4px;
 }
+
 ul{
     margin: 7px 0;
 }
 li{
-    margin: 10px 0;
+    margin: 15px 0;
     list-style-type: none;
 }
 .button{
@@ -64,6 +65,25 @@ li{
     font-size: 10px;
     border-radius: 10px;
     background-color: #47adf1;
-    padding: 5px 8px;
+    padding: 5px 10px;
     text-align: center;
+}
+#goals{
+    background-color: #9c72e4;
+}
+
+#recruiting{
+    background-color: #72c7b2;
+}
+
+#mobile{
+    background-color: #f29e33;
+}
+
+#website{
+    background-color: #d863a1;
+}
+
+#sales{
+    background-color: #b0c926;
 }
