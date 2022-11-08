@@ -98,7 +98,7 @@ li{
 #sales{
     background-color: #b0c926;
 }
-.selection{
+.selection::before{
     font-size: 10px;
     display: inline-block;
     width: 18px;
@@ -109,11 +109,13 @@ li{
     margin-right: 5px;
     font-weight: bold;
 }
-.selection.checked{
+.selection.checked::before{
     border: 1px solid green;
     color: green;
+    content: '\2713';
 }
-.selection.unchecked {
+.selection.unchecked::before {
     border: 1px solid red;
     color: red;
+    content: '\2717';
 }
