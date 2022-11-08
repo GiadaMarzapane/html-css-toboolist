@@ -5,7 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: lightgrey;
+    background-color: rgb(240, 233, 233);
 }
 header{
     background-color: white;
@@ -15,7 +15,14 @@ header{
 }
 
 .container-intestazione{
-    height: 50px;
+    height: 70px;
+}
+.intestazione{
+    vertical-align: middle;
+    line-height: 70px;
+}
+img.intestazione{
+    margin-left: 20px;
 }
 
 main{
@@ -25,7 +32,7 @@ main{
     width: 75%;
     background-color: white;
     margin: auto;
-    padding: 15px 0 15px 30px;
+    padding: 15px 0 10px 30px;
 }
 
 .parte-centrale-alta{
@@ -49,7 +56,8 @@ main{
     font-size: 11px;
 }
 .parte-centrale{
-    margin-top: 1px;
+    margin-top: 2px;
+    margin-bottom: 5px;
     border-radius: 0 0 4px 4px;
 }
 
@@ -66,7 +74,7 @@ li{
 .button{
     color: white;
     font-size: 10px;
-    border-radius: 10px;
+    border-radius: 9px;
     background-color: #47adf1;
     padding: 5px 10px;
     text-align: center;
@@ -89,4 +97,23 @@ li{
 
 #sales{
     background-color: #b0c926;
+}
+.selection{
+    font-size: 10px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+.selection.checked{
+    border: 1px solid green;
+    color: green;
+}
+.selection.unchecked {
+    border: 1px solid red;
+    color: red;
 }
