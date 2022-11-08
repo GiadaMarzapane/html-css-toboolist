@@ -26,8 +26,13 @@ main{
     width: 75%;
     background-color: white;
     margin: auto;
-    padding: 30px;
+    padding: 20px 0 20px 30px;
 }
+
+.parte-centrale-alta{
+    border-radius: 4px 4px 0 0;
+}
+
 #add-task{
     color: white;
     background-color: #47adf1;
@@ -43,4 +48,14 @@ main{
     padding: 7px;
     border: 1px solid gray;
     font-size: 11px;
+}
+.parte-centrale{
+    margin-top: 1px;
+    border-radius: 0 0 4px 4px;
+}
+ul{
+    margin: 7px 0;
+}
+li{
+    margin: 5px 0;
 }
