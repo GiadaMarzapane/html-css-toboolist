@@ -38,22 +38,21 @@ main{
 .parte-centrale-alta{
     border-radius: 4px 4px 0 0;
 }
-
+.parte-centrale-alta button{
+    border-radius: 4px;
+    padding: 7px;
+    font-size: 11px;
+}
 #add-task{
     color: white;
     background-color: #47adf1;
-    border-radius: 4px;
-    padding: 7px;
-    border: none;
-    font-size: 11px;
+    border: 1px solid #47adf1;
 }
+
 #add-section{
     color: gray;
     background-color: #f6f8f9f1;
-    border-radius: 4px;
-    padding: 7px;
     border: 1px solid gray;
-    font-size: 11px;
 }
 .parte-centrale{
     margin-top: 2px;
@@ -71,17 +70,42 @@ li{
     margin: 15px 0;
     list-style-type: none;
 }
+
+.selection::before {
+    font-size: 10px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.selection.checked::before {
+    border: 1px solid green;
+    color: green;
+    content: '\2714';
+}
+
+.selection.unchecked::before {
+    border: 1px solid red;
+    color: red;
+    content: '\2718';
+}
+
 .button::after{
     display: inline-block;
     vertical-align: middle;
     color: white;
     font-size: 10px;
+    font-weight: bold;
+    text-align: center;
     border-radius: 9px;
     background-color: #47adf1;
     padding: 5px 10px;
     margin-left: 3px;
-    text-align: center;
-    font-weight: bold;
    
 }
 
@@ -90,8 +114,8 @@ li{
 }
 
 #goals::after{
-    background-color: #9c72e4;
     content: 'Q1Goals';
+    background-color: #9c72e4;
 }
 
 #recruiting::after{
@@ -112,25 +136,4 @@ li{
 #sales::after{
     content: 'Sales';
     background-color: #b0c926;
-}
-.selection::before{
-    font-size: 10px;
-    display: inline-block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 18px;
-    margin-right: 5px;
-    font-weight: bold;
-}
-.selection.checked::before{
-    border: 1px solid green;
-    color: green;
-    content: '\2714';
-}
-.selection.unchecked::before {
-    border: 1px solid red;
-    color: red;
-    content: '\2718';
 }
