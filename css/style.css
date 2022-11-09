@@ -71,31 +71,46 @@ li{
     margin: 15px 0;
     list-style-type: none;
 }
-.button{
+.button::after{
+    display: inline-block;
+    vertical-align: middle;
     color: white;
     font-size: 10px;
     border-radius: 9px;
     background-color: #47adf1;
     padding: 5px 10px;
+    margin-left: 3px;
     text-align: center;
-}
-#goals{
-    background-color: #9c72e4;
+    font-weight: bold;
+   
 }
 
-#recruiting{
+.editorial::after{
+    content: 'Editorial';
+}
+
+#goals::after{
+    background-color: #9c72e4;
+    content: 'Q1Goals';
+}
+
+#recruiting::after{
+    content: 'Recruiting';
     background-color: #72c7b2;
 }
 
-#mobile{
+#mobile::after{
+    content: 'Mobile';
     background-color: #f29e33;
 }
 
-#website{
+#website::after{
+    content: 'Website';
     background-color: #d863a1;
 }
 
-#sales{
+#sales::after{
+    content: 'Sales';
     background-color: #b0c926;
 }
 .selection::before{
@@ -112,10 +127,10 @@ li{
 .selection.checked::before{
     border: 1px solid green;
     color: green;
-    content: '\2713';
+    content: '\2714';
 }
 .selection.unchecked::before {
     border: 1px solid red;
     color: red;
-    content: '\2717';
+    content: '\2718';
 }
